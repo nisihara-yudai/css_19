@@ -1,0 +1,75 @@
+.tech::before {
+  content: "COACH";
+  color: #22ff00;
+}
+
+.coach::after {
+  content: "TECH";
+  color: #ff2255;
+}
+
+/* contentで画像出力 */
+/* .ttl::before {
+  content: url(../img/inspiration.svg); */
+ /* }  */
+
+/* backgroundで画像出力 */
+.ttl::before {
+  content: "";
+  background: url(../img/inspiration.svg);
+  background-size: cover;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.download__btn{
+  position: relative;
+  background-color: #55bbbb;
+  width: 200px;
+  display: block;
+  padding: 18px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 100px auto;
+}
+
+.download__btn::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  background: url(../img/download__icon.svg) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translate(0,-50%);
+}
+
+.speech__bubble {
+  padding: 10px 20px;
+  background: red;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+
+.speech__bubble::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: "";
+  margin-left: -10px;
+  bottom: 10px solid transparent;
+  border-top: 1px solid red;
+}
+
+.icon{
+  content: "";
+  background: url(../img/);
+}
