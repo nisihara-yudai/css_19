@@ -51,22 +51,42 @@
   transform: translate(0,-50%);
 }
 
+/* 吹き出し */
 .speech__bubble {
-  padding: 10px 20px;
   background: red;
   position: relative;
   display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 150px;
+  max-width: 100%;
   color: #fff;
 }
 
-.speech__bubble::after {
+/* .speech__bubble::before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  margin-left: 30px;
+  bottom: 20px solid transparent;
+  border-top: 20px solid #000;
+  z-index: 3;
+} */
+
+.speech__bubble::before {
+  content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
-  content: "";
+  left: 40%;
+  bottom: 20px;
   margin-left: -10px;
-  bottom: 10px solid transparent;
-  border-top: 1px solid red;
+  border: 10px solid transparent;
+  border-top: 10px solid red;
+}
+
+.speech__bubble p {
+  margin: 0;
+  padding: 0;
 }
 
 .icon{
